@@ -1,8 +1,7 @@
 FROM ubuntu:xenial
 MAINTAINER Mavi Jiménez <mavi@linkita.net>
 
-RUN \
-    apt-get update \
+RUN apt-get update \
     && apt-get install locales \
     && locale-gen en_US.UTF-8 \
     && LANG=en_US.UTF-8 apt-get install -y curl software-properties-common git wget vim \
@@ -10,10 +9,8 @@ RUN \
 
     && apt-get update --fix-missing \
 
-    && apt-get install -y php7.1-cli php7.1-common php7.1-curl php7.1-mbstring \
-                php7.1-dev php7.1-json php7.1-pgsql php7.1-odbc php7.1-opcache \
-                php7.1-xml php7.1-xmlrpc php7.1-xsl php7.1-zip php7.1-sqlite \
-                php7.1-bcmath php7.1-soap php7.1-xdebug ant \
+RUN  apt-get install php-pear php7.2-curl php7.2-dev php7.2-gd php7.2-mbstring php7.2-zip \
+       php7.2-mysql php7.2-xml \
 
     && curl https://getcomposer.org/installer > composer-setup.php && \
                 php composer-setup.php && \
