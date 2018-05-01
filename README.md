@@ -20,7 +20,7 @@ https://www.docker.com/community-edition
 La demo está incompleta y no tiene infrastructura (por ahora) . Con lo cual no tiene funcionalidad fuera de lanzar los tests unitarios.
 
 
-### Tirar los tests (esto sí que va :) )
+### Tirar los tests
 
 ```$ docker exec -it symfony4dojo_php_1 bin/phpunit -d /var/www/dojo```
 
