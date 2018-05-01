@@ -15,7 +15,6 @@ services:
             - "8080:80"
         volumes:
             - ./:/var/www/dojo
-       #     - ./logs/symfony:/var/www/symfony/var/logs:cached
         links:
             - db
         tty: true

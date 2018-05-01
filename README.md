@@ -15,12 +15,12 @@ https://www.docker.com/community-edition
 ```$ docker-compose up -d --build```
 
 ### Hacer composer install:
-```$ docker exec -it symfony4dojo_php_1 composer install -d /var/www/dojo```
+```$ docker exec -it symfony4dojo_php_1 composer install```
 
 
 ### Tirar los tests
 
-```$ docker exec -it symfony4dojo_php_1 bin/phpunit -d /var/www/dojo```
+```$ docker exec -it symfony4dojo_php_1 bin/phpunit```
 
 ### Apagar los contendores
 ```$ docker-compose down```
