@@ -17,8 +17,6 @@ https://www.docker.com/community-edition
 ### Hacer composer install:
 ```$ docker exec -it symfony4dojo_php_1 composer install -d /var/www/dojo```
 
-La demo está incompleta y no tiene infrastructura (por ahora) . Con lo cual no tiene funcionalidad fuera de lanzar los tests unitarios.
-
 
 ### Tirar los tests
 
@@ -28,6 +26,7 @@ La demo está incompleta y no tiene infrastructura (por ahora) . Con lo cual no 
 ```$ docker-compose down```
 
 ### Entrar dentro del container
+Si lo prefieres, puedes ejecutar este comando para estar dentro del container directamente en el workdir y podrás ejecutar cualquier cosa como si estuvieras en tu máquina.
+
 ```$ docker exec -it symfony4dojo_php_1 bash```
 
-Si lo prefieres, puedes ejecutar este comando para estar dentro del container directamente en el workdir y podrás ejecutar cualquier cosa como si estuvieras en tu máquina.
