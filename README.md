@@ -15,12 +15,12 @@ https://www.docker.com/community-edition
 ```$ docker-compose up -d --build```
 
 ### Hacer composer install:
-```$ docker exec -it symfony4dojo_php_1 composer install```
+```$ docker exec -it symfony4-dojo_php_1 composer install```
 
 
-### Tirar los tests
+### Tirar los tests (La primera vez debe instalar cosas)
 
-```$ docker exec -it symfony4dojo_php_1 bin/phpunit```
+```$ docker exec -it symfony4-dojo_php_1 bin/phpunit```
 
 ### Apagar los contendores
 ```$ docker-compose down```
@@ -28,5 +28,5 @@ https://www.docker.com/community-edition
 ### Entrar dentro del container
 Si lo prefieres, puedes ejecutar este comando para estar dentro del container directamente en el workdir y podrás ejecutar cualquier cosa como si estuvieras en tu máquina.
 
-```$ docker exec -it symfony4dojo_php_1 bash```
+```$ docker exec -it symfony4-dojo_php_1 bash```
 
