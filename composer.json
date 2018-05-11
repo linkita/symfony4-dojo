@@ -11,10 +11,12 @@
         "symfony/yaml": "^4.0"
     },
     "require-dev": {
+        "phpspec/phpspec": "^4.3",
         "symfony/dotenv": "^4.0",
         "symfony/phpunit-bridge": "^4.0"
     },
     "config": {
+        "bin-dir": "bin",
         "preferred-install": {
             "*": "dist"
         },

@@ -1,0 +1,5 @@
+suites:
+    dojo_suite:
+        namespace: Dojo
+        psr4_prefix: Dojo
+        spec_path: '%paths.config%/tests'
